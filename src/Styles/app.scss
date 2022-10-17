@@ -1,0 +1,26 @@
+$font-stack:    Courier New;
+
+.buttonShow {
+    width: 25px;
+    height: 20px;
+    border-radius: 3px;
+    border-width: 0px;
+    background: url('../../public/show.jpg') no-repeat center center;
+}
+.buttonNotShow {
+    background: url('../../public/not_show.jpg') no-repeat center center;
+    width: 19px;
+    height: 16px;
+    border-radius: 3px;
+    border-width: 0px;
+}
+.password {
+    font: 100% $font-stack;
+    height: 20px;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+label {
+    font: 100% $font-stack;
+    
+}
