@@ -15,19 +15,14 @@ import '../Styles/app.scss';
 const AppF : React.FC<{isShowed: boolean, type: string, className: string}> = () : ReactElement => {
 
   const [isShowed, setShowed] = useState(true);
-  const [type, setType] = useState("text");
-  const [classNam, setClassNam] = useState("buttonNotShow");
-
 
   return (
     <div>
       <label htmlFor='anya'>Введите пароль: </label>
        <br />
        <br />
-      <input id="anya" type={type} className="password"/>
-      <button className={classNam} onClick={() => {setShowed(!isShowed); 
-        setType(isShowed ? "text" : "password"); 
-        setClassNam(isShowed ? "buttonShow" : "buttonNotShow")}}></button>
+      <input id="anya" type={`${isShowed ? 'text' : 'password'}`} className="password"/>
+      <button className={`${isShowed ? 'buttonShow' : 'buttonNotShow'}`} onClick={() => {setShowed(!isShowed);}}></button>
     </div>
   );
 }
